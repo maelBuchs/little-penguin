@@ -1,0 +1,26 @@
+From e642b9594f705561d57b8ae506165d108a8b17a0 Mon Sep 17 00:00:00 2001
+From: Mael Buchs <mael@buchs.fr>
+Date: Fri, 9 Jan 2026 18:39:07 +0100
+Subject: [PATCH] kbuild: update EXTRAVERSION to -thor_kernel
+
+Signed-off-by: Mael Buchs <mael@buchs.fr>
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 665b79aa21b8..f2b62748bf77 100644
+--- a/Makefile
++++ b/Makefile
+@@ -2,7 +2,7 @@
+ VERSION = 6
+ PATCHLEVEL = 19
+ SUBLEVEL = 0
+-EXTRAVERSION = -rc4
++EXTRAVERSION = -thor_kernel
+ NAME = Baby Opossum Posse
+ 
+ # *DOCUMENTATION*
+-- 
+2.50.1
+
