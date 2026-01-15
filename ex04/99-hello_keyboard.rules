@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_interface", ATTRS{bInterfaceClass}=="03", ATTRS{bInterfaceSubClass}=="01", ATTRS{bInterfaceProtocol}=="01", RUN+="/bin/sh -c '/sbin/modprobe hello_keyboard; echo %k > /sys/bus/usb/drivers/usbhid/unbind; echo %k > /sys/bus/usb/drivers/hello_keyboard/bind'"
